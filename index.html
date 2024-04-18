@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/estilo.css">
+    <title>Inscrição</title>
+</head>
+<body>
+    <header id="cabecalho">
+        <a href="#" class="d-sm-none d-md-block" id="logo">Logo</a>
+        <nav>
+           <ul class="menu">
+                <li> 
+                    <a class="opmenu" href="#">Home</a> 
+                </li>
+                <li> 
+                    <a class="opmenu" href="#">Quem Somos</a> 
+                </li>
+                <li> 
+                    <a class="opmenu" href="#">Inovação</a> 
+                </li>
+                <li> 
+                    <a class="opmenu" href="#">Tecnologia</a> 
+                </li>
+            </ul>     
+        </nav>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 col-sm-12 col-lg-3 col-xl-3">
+                <h2>Eventos da semana: T.I</h2>
+                <h5 class="titulo text-justify">Faça ja sua inscrição e participe: Vagas limitadas!</h5>
+                <img src="img/tecnologia-evento.png">
+                <p class="desc text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos at incidunt eveniet, odio fugit tempore ducimus mollitia voluptas dolores deserunt sed delectus dolor corporis aperiam dignissimos et vel modi ut.</p>
+            </div>
+            <div class="col-md-7 col-sm-12 col-lg-7 col-xl-7">
+                <form type="submit" class="needs-validation" id="cadastroForm" novalidate>
+                    <fieldset>
+                        <legend>Dados Pessoais</legend>
+                        <div class="form-group">
+                            <label for="exampleInputName1">Nome</label>
+                            <input type="text" class="form-control" id="nome" aria-describedby="" placeholder="Seu nome" required>
+                            <div class="valid-feedback">
+                                Tudo certo!
+                            </div>
+                            <div class="invalid-feedback">
+                                Por favor, informe seu nome.
+                            </div>
+
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputLastName1">Sobrenome</label>
+                            <input type="text" class="form-control" id="sobrenome" aria-describedby="" placeholder="Seu sobrenome" required>
+                            <div class="valid-feedback">
+                                Tudo certo!
+                            </div>
+                            <div class="invalid-feedback">
+                                Por favor, informe seu sobrenome.
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Você no momento: </label>
+                        <div class="form-check mb-">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="opcao1" checked>
+                            <label class="form-check-label" for="gridRadios1">
+                                Trabalha apenas
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="opcao2">
+                            <label class="form-check-label" for="gridRadios2">
+                              Apenas Estuda
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="opcao2">
+                            <label class="form-check-label" for="gridRadios2">
+                              Trabalha e estuda
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="opcao2">
+                            <label class="form-check-label" for="gridRadios2">
+                              Aposentado(a)
+                            </label>
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputLastName1">Se trabalha, informe seu cargo...</label>
+                            <input type="text" class="form-control" id="cargo" aria-describedby="" placeholder="Profissão">
+                        </div>
+
+                        <div class="form-group">
+                        <label for="exampleInputEmail1">Endereço de email</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="exemplo@gmail.com" required>
+                        <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
+                        <div class="invalid-feedback">
+                            Por favor, informe seu e-mail.
+                        </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Senha</label>
+                            <input type="password" class="form-control" id="senha" placeholder="Senha" required>
+                            <div class="invalid-feedback">
+                                Pro favor, informe sua senha.
+                            </div>
+                        </div>  
+                    </fieldset>
+                    <fieldset class="preferencias">
+                        <legend>Preferências</legend>
+                        <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Temas preferidos:</label>
+                        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                          <option value="1" selected>Programação</option>
+                          <option value="2">Computação em Nuvem</option>
+                          <option value="3">Projetos Dev</option>
+                          <option value="4">Inteligência Artificial</option>
+                          <option value="5">Dept. T.I e gestão</option>
+                          <option value="6">Hardware Avançado</option>
+                        </select>
+                      
+                        <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                          <input type="checkbox" class="custom-control-input" id="customControlInline">
+                          <label class="custom-control-label" for="customControlInline">Receber recomendações por e-mail</label>
+                        </div>
+                    </fieldset>
+                    <div class="form-group">
+                      <button type="submit" class="btn">Enviar</button>
+                    </div>
+                  </form>
+            </div>
+        </div>
+    </div>
+
+    <!--Modal-->
+    <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="successModalLabel">Sucesso!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Cadastro realizado com sucesso!
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn" data-dismiss="modal">Fechar</button>
+              <button type="button" class="btn" id="addNewUserBtn">Adicionar Novo Usuário</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <script src="bootstrap/js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/validacao.js"></script>
+    <script src="bootstrap/js/modal.js"></script>
+</body>
+</html>
