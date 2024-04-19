@@ -15,4 +15,10 @@
       }, false);
     });
   }, false);
+
+   // Aplicar máscara de e-mail
+   $('#email').inputmask({ alias: "email" });
+
+   // Aplicar máscara de número (nesse caso, um número de telefone)
+   $('#numero').inputmask("(99) 9999-9999");
 })();
